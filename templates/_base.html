@@ -7,7 +7,7 @@
 <script src="https://kit.fontawesome.com/874dd9899f.js" crossorigin="anonymous"></script>
 <title>{% block title %}{% endblock %} | Play 2 Learn</title>
 </head>
-<body>
+<body class="bg-dark">
 <header>
   <nav
     class="navbar navbar-dark bg-primary navbar-expand-md d-flex justify-content-between border-bottom border-2 border-info bg-transparent">
@@ -22,7 +22,7 @@
     <div class="collapse navbar-collapse" id="navbar-content">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a to="/" class="nav-link fs-3 font-weight-bold text-info">Home</a>
+          <a href="{% url 'pages:homepage' %}" class="nav-link fs-3 font-weight-bold text-info">Home</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link fs-3 dropdown-toggle font-weight-bold text-info" role="button" id="navbar-dropdown"
@@ -36,7 +36,7 @@
           </div>
         </li>
         <li class="nav-item">
-          <a to="/AboutComp" class="nav-link fs-3 font-weight-bold text-info">About</a>
+          <a href="{% url 'pages:about-us' %}" class="nav-link fs-3 font-weight-bold text-info">About</a>
         </li>
         <li class="nav-item">
           <a to="/LoginComp" class="nav-link fs-3 font-weight-bold text-nowrap text-info">Log In</a>

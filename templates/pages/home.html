@@ -1,0 +1,36 @@
+{% extends "_base.html" %}
+
+{% block title %}Home{% endblock %}
+{% block main %}
+<main class="m-3 d-flex flex-md-row flex-column flex-wrap p-2 mb-md-2">
+    <div class="the-quotes w-100 mb-2 text-center">
+      <p class="quote-text text-primary fs-3 fst-italic text-info">"The way to get started is to quit talking and begin
+        doing."</p>
+      <p class="authors text-light fs-3">- Walt Disney</p>
+    </div>
+    <div class="container bg-dark">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mx-auto my-2 p-3 border border-2 border-info rounded bg-dark">
+            <h1 class="text-info display-5 mb-3">Math Facts</h1>
+            <p class="fs-4 mb-3 text-light">Brush up on your math skills and try our new new game thats aimed at making
+              you a better
+              mathematician. Choose which operation you want to practice and answer as many questions as you can before
+              time runs out!</p>
+            <a to="/MathConfig" class="btn btn-info text-light w-100 fs-3 mt-3">Play Now!</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="mx-auto my-2 p-3 border border-2 border-info rounded bg-dark">
+            <h1 class="text-info display-5 mb-3">Anagram hunt</h1>
+            <p class="fs-4 mb-3 text-light">Try out our new game, Anagram Hunt. We didn't have it last time but things
+              have changed and we
+              have it now. Make words from words. All kinds of words. Any length of words. Easy words, and hard words.
+            </p>
+            <a to="/AnagramConfig" class="btn btn-info text-light w-100 fs-3 mt-3">Play Now!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+{% endblock %}
