@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     #local
     'pages.apps.PagesConfig',
+    'users.apps.UsersConfig',
 ]
 
 MIDDLEWARE = [
@@ -79,7 +80,7 @@ WSGI_APPLICATION = 'play2learn.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'jokes',
+        'NAME': 'play2learn',
         'USER': 'postgres',
         'PASSWORD': 'Ballie476956pkh!',
         'HOST': 'localhost',
@@ -105,6 +106,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+AUTH_USER_MODEL = 'users.CustomUser'
 
 
 # Internationalization
